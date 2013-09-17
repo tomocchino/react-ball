@@ -1,0 +1,11 @@
+body {
+  background-color: #111;
+}
+
+.Ball {
+  background: #39f;
+  border-radius: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
