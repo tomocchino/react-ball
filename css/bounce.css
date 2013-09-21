@@ -3,7 +3,8 @@ body {
 }
 
 .Ball {
-  background: #39f;
+  background: #f39;
+  /*background: #39f;*/
   border-radius: 30px;
   left: 0;
   position: absolute;
