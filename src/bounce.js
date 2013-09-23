@@ -26,6 +26,7 @@ var Ball = React.createClass({
   },
 
   _pause: function() {
+    this.setState({velocity: {x:0, y:0}});
     cancelAnimationFrame(this._frame);
     this._frame = null;
   },
@@ -86,6 +87,7 @@ var Ball = React.createClass({
       document.removeEventListener('mousemove', mousemove);
       document.removeEventListener('mouseup', mouseup);
     };
+
     document.addEventListener('mousemove', mousemove, false);
     document.addEventListener('mouseup', mouseup, false);
   },
