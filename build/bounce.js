@@ -26,6 +26,7 @@ var Ball = React.createClass({displayName: 'Ball',
   },
 
   _pause: function() {
+    this.setState({velocity: {x:0, y:0}});
     cancelAnimationFrame(this._frame);
     this._frame = null;
   },
